@@ -6,7 +6,7 @@ header {
 
 
 body {
-  background-color: rgb(63, 25, 231);
+  background-color: rgb(25, 155, 231);
 }
 
 h1 {
@@ -53,4 +53,23 @@ padding: 0.7rem
 #pickup-button:hover {
   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
   cursor: pointer;
+}
+
+#joke-container {
+  color: white;
+  text-align: center;
+  border: 1px;
+}
+
+#saved-container {
+  color: white;
+  text-align: center;
+  
+}
+#save-button {
+  background-color: #000;
+color: white;
+border: none;
+font-size: 1rem;
+padding: 0.2rem
 }
