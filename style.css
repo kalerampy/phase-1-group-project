@@ -1,0 +1,56 @@
+header {
+  justify-content: center;
+  text-align: center;
+  padding: .5rem .5rem .5rem .5rem;
+}
+
+
+body {
+  background-color: rgb(63, 25, 231);
+}
+
+h1 {
+  background-color: rgb(218, 231, 25);
+}
+
+.buttons {
+  justify-content: center;
+  text-align: center;
+  padding: 5px 5px 5px 25px;
+  color:#000;
+  text-decoration:none;
+  margin: 4px 4px;
+  font-size: 2rem;
+  border: none;
+  
+}
+
+#joke-button {
+  /* background: #ED213A;
+  background: -webkit-linear-gradient(to right, #93291E, #ED213A); 
+  background: linear-gradient(to right, #93291E, #ED213A); */
+  background-color: #000;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.7rem
+}
+#pickup-button {
+/* background: #c0392b;
+background: -webkit-linear-gradient(to right, #8e44ad, #c0392b); 
+background: linear-gradient(to right, #8e44ad, #c0392b);  */
+background-color: #000;
+color: white;
+border: none;
+font-size: 1.5rem;
+padding: 0.7rem
+}
+
+#joke-button:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  cursor: pointer;
+}
+#pickup-button:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  cursor: pointer;
+}
