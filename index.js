@@ -22,22 +22,31 @@ const renderJoke = (joke) => {
   jokeSetup.textContent = joke.setup;
   const jokeDelivery = document.createElement('h4');
   jokeDelivery.textContent = joke.delivery;
-  const saveButton = document.createElement('button');
-  saveButton.id = 'save-button';
-  saveButton.textContent = 'Save this joke';
+  const saveButton = document.createElement('i');
+  saveButton.className = "fa-solid fa-floppy-disk"
   const buttonContainer = document.createElement('div');
   buttonContainer.append(saveButton);
   jokeContainer.append(jokeSetup, jokeDelivery, buttonContainer);
   saveButton.addEventListener('click', () => {
-    savedContainer.append(jokeSetup, jokeDelivery);
+    const childSaved = document.createElement('div')
+    const buttonDiv = document.createElement('div')
+    const deleteBttn = document.createElement('i')
+    const copyBttn = document.createElement('i')
+    buttonDiv.id = 'button-div'
+    deleteBttn.className = 'fa-solid fa-trash-can'
+    copyBttn.className = "fa-solid fa-copy"
+    buttonDiv.append(deleteBttn, copyBttn)
+    deleteBttn.addEventListener('click', () => childSaved.remove())
+
+
+
+    childSaved.append(jokeSetup, jokeDelivery, buttonDiv);
+    childSaved.className = 'child-saved'
+    savedContainer.append(childSaved)
     jokeContainer.innerHTML = ''
   })
   
 }
-
-
-
-
 
 
 getJokeButton.addEventListener('click', () => {

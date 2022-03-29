@@ -23,6 +23,7 @@ h1 {
   text-decoration:none;
   font-size: 2rem;
   border: none;
+  padding: 10px;
 }
 
 #joke-button {
@@ -33,9 +34,9 @@ h1 {
   color: white;
   border: none;
   font-size: 1.5rem;
-  padding: 0.7rem
-  width: 5vh;
-  height: 5vh;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 25px;
 }
 
 #pickup-button {
@@ -46,7 +47,9 @@ background-color: #000;
 color: white;
 border: none;
 font-size: 1.5rem;
-padding: 0.7rem
+padding: 10px;
+border: 1px solid #fff;
+border-radius: 25px;
 }
 
 #joke-button:hover {
@@ -64,8 +67,10 @@ padding: 0.7rem
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
   border-radius: 25px;
-  border: 2px solid #73AD21;
+  border: 2px solid rgb(24, 22, 22);
   padding: 20px;
   width: 50vh;
   height: 15vh;
@@ -74,14 +79,72 @@ padding: 0.7rem
 #saved-container {
   color: white;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  margin: 10px;
+  }
 
+.inner {
+    float: left;
+    margin: 5px;
 }
-#save-button {
-  background-color: #000;
+
+
+.child-saved {
   color: white;
-  border: none;
-  font-size: 1rem;
-  padding: 0.2rem1
-  border: 2px solid;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
   border-radius: 25px;
+  border: 2px solid rgb(24, 22, 22);
+  padding: 50px;
+  width: 200px;
+  height: 300px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
+
+.fa-trash-can {
+  font-size: 2rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.fa-trash-can:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.fa-floppy-disk {
+  font-size: 2rem;
+  color: white;
+}
+.fa-floppy-disk:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.fa-copy {
+  font-size: 2rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.fa-copy:hover {
+  font-size: 2rem;
+  color: red;
+  cursor: pointer;
+}
+
+#button-div {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+}
+
+
