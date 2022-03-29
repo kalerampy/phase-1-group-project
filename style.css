@@ -8,11 +8,14 @@ header {
 
 
 body {
-  background-color: rgb(25, 155, 231);
+    background-image: url('/img/doge-satelite.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 h1 {
-  background-color: rgb(218, 231, 25);
+  color: rgb(218, 231, 25);
+  text-shadow: 2px 2px 5px rgb(245, 201, 4); 
 }
 
 .buttons {
@@ -21,9 +24,10 @@ h1 {
   padding: 5px 5px 5px 25px;
   color:#000;
   text-decoration:none;
-  font-size: 2rem;
+  font-size: 1rem;
   border: none;
   padding: 10px;
+  font-family: Tahoma, Verdana, sans-serif;
 }
 
 #joke-button {
@@ -33,10 +37,11 @@ h1 {
   background-color: #000;
   color: white;
   border: none;
-  font-size: 1.5rem;
-  padding: 10px;
-  border: 1px solid #fff;
+  font-size: 1rem;
+  padding: 1vh;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 25px;
+  font-family: Tahoma, Verdana, sans-serif;
 }
 
 #pickup-button {
@@ -48,8 +53,9 @@ color: white;
 border: none;
 font-size: 1.5rem;
 padding: 10px;
-border: 1px solid #fff;
+border: 1px solid rgb(0, 0, 0);
 border-radius: 25px;
+font-family: Tahoma, Verdana, sans-serif;
 }
 
 #joke-button:hover {
@@ -63,27 +69,36 @@ border-radius: 25px;
 
 #joke-container {
   color: white;
+  text-shadow: 2px 2px rgb(0, 0, 0);
   text-align: center;
-  display: block;
+  display: flexbox;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  margin-top: 10px;
-  border-radius: 25px;
-  border: 2px solid rgb(24, 22, 22);
-  padding: 20px;
+  margin-top: 1px;
   width: 50vh;
-  height: 15vh;
+  height: 20vh;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  background:#7f7f7f;
+  background:rgba(96, 96, 96, 0.7);
+  font-family: Tahoma, Verdana, sans-serif;
+  
 }
 
 #saved-container {
   color: white;
-  text-align: center;
+  max-height: 60vh;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
   flex-direction: row;
   flex-wrap: wrap;  
-  margin: 10px;
-  }
+  overflow: auto;
+  padding: 0vh 20vw;
+  font-family: Tahoma, Verdana, sans-serif;
+}
 
 .inner {
     float: left;
@@ -93,20 +108,29 @@ border-radius: 25px;
 
 .child-saved {
   color: white;
+  text-shadow: 2px 2px rgb(0, 0, 0);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   border-radius: 25px;
-  border: 2px solid rgb(24, 22, 22);
+  border: 2px solid rgb(255, 255, 255);
   padding: 50px;
   width: 200px;
   height: 300px;
   position: relative;
   justify-content: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+  overflow: auto;
+  background:#7f7f7f;
+  background:rgba(96, 96, 96, 0.7)
+}
+
+.child-saved:hover {
+  background:rgba(187, 87, 87, 0.7);
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
 
 .fa-trash-can {
@@ -146,5 +170,3 @@ border-radius: 25px;
   left: 0;
   right: 0;
 }
-
-
