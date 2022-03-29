@@ -1,7 +1,9 @@
 header {
   justify-content: center;
   text-align: center;
-  padding: .5rem .5rem .5rem .5rem;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -19,10 +21,8 @@ h1 {
   padding: 5px 5px 5px 25px;
   color:#000;
   text-decoration:none;
-  margin: 4px 4px;
   font-size: 2rem;
   border: none;
-  
 }
 
 #joke-button {
@@ -34,7 +34,10 @@ h1 {
   border: none;
   font-size: 1.5rem;
   padding: 0.7rem
+  width: 5vh;
+  height: 5vh;
 }
+
 #pickup-button {
 /* background: #c0392b;
 background: -webkit-linear-gradient(to right, #8e44ad, #c0392b); 
@@ -58,18 +61,27 @@ padding: 0.7rem
 #joke-container {
   color: white;
   text-align: center;
-  border: 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 50vh;
+  height: 15vh;
 }
 
 #saved-container {
   color: white;
   text-align: center;
-  
+
 }
 #save-button {
   background-color: #000;
-color: white;
-border: none;
-font-size: 1rem;
-padding: 0.2rem
+  color: white;
+  border: none;
+  font-size: 1rem;
+  padding: 0.2rem1
+  border: 2px solid;
+  border-radius: 25px;
 }
