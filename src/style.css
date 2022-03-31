@@ -6,7 +6,7 @@ header {
 
 
 body {
-    background-image: url('/img/doge-satelite.jpeg');
+    background-image: url('../img/doge-satelite.jpeg');
     background-size: 100%;
     background-repeat: repeat;
 }
@@ -200,7 +200,7 @@ body {
   width: 20vw;
   height: 17vh;
   color: #fff;
-  background: url('/img/astro-doge.png');
+  background: url('../img/astro-doge.png');
   background-size: 50%;
   background-repeat: no-repeat;
   opacity: .5;
