@@ -9,6 +9,7 @@ const URL = 'https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,polit
 // copyBttn.className = "fa-solid fa-copy"
 
 
+
 const getNewJoke = () => {
   fetch(URL)
     .then(response => response.json())
@@ -225,3 +226,5 @@ function setStyle(element, properties) {
 
 }
 makeMoves()
+
+
